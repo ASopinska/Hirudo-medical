@@ -1,0 +1,259 @@
+/* fonty */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* zmienne kolorów */
+:root {
+    --dark: #adaca6;
+    --light: #f0f1ed;
+    --font-color: #292929;
+    --light-nav: rgb(255, 255, 255);
+    --box-shadow: rgba(252, 246, 246, 0.1);
+    --gray: #666; 
+    --black: #0d0e0d;
+}
+
+/* ustawnienia strony */
+body {
+    background-color: var(--dark);
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+/* main */
+#main {
+    background-image: url("../images/willaanka.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 800px;
+    background-color: var(--light);
+    height: 900px;
+    position:relative;
+    box-sizing: border-box;
+    
+}
+
+/* nawigacja */
+
+nav {
+    display: flex;
+    justify-content: space-between ;
+    align-items: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif, sans-serif;
+    background-color: var(--light-nav);
+    position: fixed;
+    width: 93vw;
+    top: 0;
+    left: 0;
+    padding: 10px 50px;
+    
+    box-sizing: content-box;
+    box-shadow: 2px 2px 12px var(--box-shadow);
+    z-index: 1;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: var(--font-color);
+    font-family: Poppins, sans-serif;
+}
+
+.menu {
+    display: flex;
+
+}
+
+.menu li a {
+    color: var(--font-color);
+    padding: 10px 15px;
+    font-size: 14px;
+}
+
+.active a, .menu li a:hover {
+    background-color: var(--dark);
+    color: var(--light-nav) !important;
+    transition: all ease 1s;
+}
+
+.lang {
+    color: var(--font-color);
+}
+
+/* strona główna */
+.name {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 450px;
+    position:absolute;
+    top: 20%;
+    left: 10%;
+    
+}
+
+.name p {
+    color: var(--grey);
+}
+
+.name h1 {
+    font-family: poppins, sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: var(--font-color);
+}
+
+.name h1 span {
+    color: var(--light-nav);
+}
+/*
+.galeria-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--dark);
+    color: var(--light);
+    width: 250px;
+    height: 50px;
+}
+*/
+
+.cv-btn:hover {
+    background-color: var(--black);
+    transition: all ease 1s;
+}
+
+
+.social {
+    position: absolute;
+    left: 50px;
+    bottom: 50px;
+
+}
+
+.social a{
+    margin: 0 15px;
+    color: var(--gray);
+}
+
+.social a:hover {
+    color: var(--black);
+    transition: all ease 1s;
+}
+
+/* sekcja o nas */
+#about {
+    width: 93vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 5%;
+   
+}
+
+.about-tekst {
+    width: 60%;
+    color: var(--light);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.about-tekst h1 {
+    color: var(--light-nav);
+    font-size: 2.5rem;
+
+}
+
+.about-tekst h3{
+    font-size: 1.4rem;
+    color: var(--gray);
+}
+
+.about-tekst p {
+    font-size: 1.2rem;
+    color: var(--gray);
+}
+
+
+
+/* sekcja z moimi usługami */
+#services {
+    width: 93vw;
+    height: 100vh;
+    padding-top: 10%;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.s-heading {
+    text-align: center;
+    
+}
+.s-heading h1 {
+    font-size: 3rem;
+}
+
+.s-heading p {
+    color: var(--gray);
+    font-size: 1.5rem;
+}
+
+.s-box {
+    width: 350px;
+    height: 400px;
+    background-color: var(--gray);
+    margin: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 2px 2px 12px var(--gray);
+    position: relative;
+}
+
+.b-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.s-b-tekst p {
+    font-size: 1.1em;
+    text-align: center;
+    padding: 0 10px ;
+}
+
+.s-box:hover {
+    
+    transition: all ease 0.5s;
+}
+
+/* Kontakt */
+#contact {
+    text-align: center;
+    padding-left: 5%;
+    padding-top: 10%;
+    background-color: var(--light);
+    width: 94vw;
+    height: 100vh;
+}
+
+/* Stopka */
+footer {
+    text-align: center;
+    padding: 3px;
+    background-color: var(--font-color);
+    color: white;
+}
